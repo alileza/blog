@@ -1,0 +1,4 @@
+baseURL = 'https://blog.alileza.me/'
+languageCode = 'en-us'
+title = 'Behind The Keyboard: Failure, Inefficiency, and Miscommunication in Software Engineering'
+theme = 'paper'
