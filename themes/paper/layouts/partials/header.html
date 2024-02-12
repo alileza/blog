@@ -2,7 +2,7 @@
   <div class="relative z-50 mr-auto flex items-center">
     <img class="avatar" src="https://cdn.alileza.me/public/avatar.png" width="70"/>
     <a
-      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold" style="display: block !important;"
       href="{{ `` | absURL }}"
       >{{ site.Title }}</a
     >
@@ -13,14 +13,14 @@
       aria-label="Dark"
     ></div>
   </div>
-  
+    
 
   <div
     class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
     role="button"
     aria-label="Menu"
   ></div>
-
+  
   {{ $bg_color := $.Scratch.Get "bg_color" }}<!---->
 
   <script>

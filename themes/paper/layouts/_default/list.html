@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+<div style="text-align: center; margin-bottom: 30px; margin-top: -30px; font-size: 16px; color: #aaa">
+  {{ site.Params.Subtitle }}
+</div>
+
 <!-- Tag Title -->
 {{ if and .Title (eq .Type "tags") }}
 <h1 class="mb-16">#{{ .Title }}</h1>
