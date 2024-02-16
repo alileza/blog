@@ -1,6 +1,6 @@
 baseURL = 'https://blog.alileza.me/'
 languageCode = 'en-us'
-title = 'Behind The Keyboard'
+title = 'behind the keyboard'
 theme = 'paper'
 [params]
-    subtitle = 'Failure, Inefficiency, and Miscommunication in Software Engineering'
+    subtitle = 'failure, inefficiency, and miscommunication in software engineering'
