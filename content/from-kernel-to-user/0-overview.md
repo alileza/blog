@@ -9,3 +9,5 @@ This document is written to help us understand communication that generally happ
 I believe the only way to becoming a better Software Engineer, is to be a better communicator. Software is simply a set of instructions. And the big question is, how are we able to write a perfect and beautiful set of instructions that efficiently solves our problem? 
 
 So how can I be a good communicator with computers? That would be the core story of the journey this story, we will walk through how things communicate with each other from the kernel to the user.
+
+[Understand your audience](/from-kernel-to-user/1-understand-your-audience/)
