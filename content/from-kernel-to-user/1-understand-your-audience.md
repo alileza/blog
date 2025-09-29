@@ -5,9 +5,16 @@ draft = false
 +++
 
 Previous: [Overview](/from-kernel-to-user/0-overview/)
+Next: [Trace the stack](/from-kernel-to-user/2-trace-the-stack/)
 
-Depending on your interest your audience might differs, you could be web developer which means your audience is web browser, or backend engineer which means your audience is a platform like virtual machine, or some container orchestration like kubernetes/nomad etc, or you could be platform engineer which your audience would be closer to bare metal computer, or probably cloud services.
+Every layer of the stack hears a different accent.
+Browsers expect carefully structured markup, APIs listen for predictable payloads, kernels wait for syscalls that respect their contracts.
 
-In this series, I wouldn't cover all of the variations, I would focus on area that I've been involved more frequent in my career. Which starts from web development, web browser, networking, backend application, a little bit of the virtualization, then down to the kernel.
+Map the actors you depend on, then tailor your message for each one:
 
-The importance of understanding your audience is crucial to your decision making, because you can build things that is effective, but not efficient, or vice versa, efficient but not effective?
+- What inputs do they accept, and in what shape?
+- Which constraints, quotas, or timing guarantees do they enforce?
+- How do they report success, failure, or back pressure?
+
+Clarity starts with empathy for whoever—or whatever—is on the other side of the message.
+
