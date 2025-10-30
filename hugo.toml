@@ -4,3 +4,4 @@ title = 'behind the keyboard'
 theme = 'paper'
 [params]
     subtitle = 'failure, inefficiency, and miscommunication in software engineering'
+    mainSections = ['posts']
