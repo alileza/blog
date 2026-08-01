@@ -27,7 +27,7 @@ At Treptower Park, the train just ended. It's supposed to run through to Pankow,
 
 I only noticed at 22:20 when I got to my home station and started patting myself down for it. The guy standing next to me said I hadn't been wearing a bag — which tracks, because by the time I boarded that second train, I didn't have one. It was on the floor of that first S85. Staff told me the train reversed direction at Treptower Park after we all got off, so my bag was riding back south without me.
 
-Inside it: a quite expensive laptop, and a cap that says *"kein bock auf nazis"*. Late at night, on an empty carriage heading the other way — I really thought I lost that bag.
+Inside it: a quite expensive laptop — with a YubiKey still attached, which costs a good amount of money on its own — and a cap that says *"kein bock auf nazis"*. Late at night, on an empty carriage heading the other way — I really thought I lost that bag.
 
 The ridiculous part? My band has a song about exactly this. The chorus literally goes *"sway goodnight to your wallet and phone"* and curses that last train to Pankow — the very train that betrayed me. [I should really start listening to my own lyrics.](https://open.spotify.com/track/5avlS8G6d3yToSZBcQHUTn)
 
