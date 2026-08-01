@@ -19,7 +19,13 @@ He's the angel. He gave me back my wallet, **untouched, everything inside**.
 
 # The bag on the S85
 
-Then last Wednesday, I left my bag on the S-Bahn, the S85. It was late night, after 10pm. Inside it: a quite expensive laptop, and a cap that says *"kein bock auf nazis"*. I really thought I lost that bag.
+Then last Wednesday, I was heading home on the S85 with my bike, around 22:00. My phone was nearly dead, so I put my backpack down on the floor of the carriage, pulled out my power bank, and once the phone was charging I stood there over the bag and started a game of chess.
+
+At Treptower Park, the train just ended. It's supposed to run through to Pankow, but the announcement said everyone out, cross to the other platform for the next train. I grabbed the bike and hurried over — and that's where it went wrong. The bag was still on the floor, and the carriage was empty, so there was nobody to shout after me.
+
+I only noticed at 22:20 when I got to my home station and started patting myself down for it. The guy standing next to me said I hadn't been wearing a bag — which tracks, because by the time I boarded that second train, I didn't have one. It was on the floor of that first S85. Staff told me the train reversed direction at Treptower Park after we all got off, so my bag was riding back south without me.
+
+Inside it: a quite expensive laptop, and a cap that says *"kein bock auf nazis"*. Late at night, on an empty carriage heading the other way — I really thought I lost that bag.
 
 I sent a lost & found report to S-Bahn Berlin anyway. Two days later, I received an email — just like getting a delivery notification for an online order, with a pick-up address. Quite an experience.
 
