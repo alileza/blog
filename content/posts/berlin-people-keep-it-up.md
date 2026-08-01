@@ -29,6 +29,8 @@ I only noticed at 22:20 when I got to my home station and started patting myself
 
 Inside it: a quite expensive laptop, and a cap that says *"kein bock auf nazis"*. Late at night, on an empty carriage heading the other way — I really thought I lost that bag.
 
+The ridiculous part? My band has a song about exactly this. The chorus literally goes *"sway goodnight to your wallet and phone"* and curses that last train to Pankow — the very train that betrayed me. [I should really start listening to my own lyrics.](https://open.spotify.com/track/5avlS8G6d3yToSZBcQHUTn)
+
 I sent a lost & found report to S-Bahn Berlin anyway. Two days later, I received an email — just like getting a delivery notification for an online order, with a pick-up address. Quite an experience.
 
 # Closure
