@@ -33,6 +33,10 @@ The ridiculous part? My band has a song about exactly this. The chorus literally
 
 I sent a lost & found report to S-Bahn Berlin anyway. Two days later, I received an email — just like getting a delivery notification for an online order, with a pick-up address. Quite an experience.
 
+![My laptop at the Fundbüro, reunited with its owner](/images/laptop-fundbuero.jpg)
+
+*The moment of reunion at the Fundbüro. Untouched, of course.*
+
 # Closure
 
 The thing I want to emphasize is how random this is, in a city. Where I come from, this wouldn't happen that often.
