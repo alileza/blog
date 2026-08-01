@@ -9,9 +9,11 @@ Recently I've been losing my important stuff outside. Twice. And both times, it 
 
 # The wallet
 
-The first one was my wallet, with a good amount of cash in it. It fell out of my pocket while I was cycling, and I only noticed about 10–20 minutes later. Frustrating. Natural instinct: I traced my way back, cycling the same route.
+The first one was my wallet, with a good amount of cash in it. I was cycling up Greifswalder Straße, out of Prenzlauer Berg towards Weißer See, when it fell out of my pocket somewhere along the way. I only noticed about 10–20 minutes later. Frustrating. Natural instinct: I turned around and traced my way back, cycling the same route, eyes scanning the asphalt and the tram tracks for a small black rectangle that could be anywhere by now.
 
 Then I found a strange guy standing in front of my apartment building. As I approached him, he was looking very uncomfortable, and then he shouted my last name — *"Yahya?"*
+
+Think about it: he found a wallet on the street, and instead of walking away with it, he figured out the address from my ID and stood there waiting for a stranger to come home.
 
 And I'm like...
 
