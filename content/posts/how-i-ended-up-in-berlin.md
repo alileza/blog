@@ -4,7 +4,7 @@ date: 2026-11-03
 draft: false
 ---
 
-People sometimes ask me how I ended up living in Germany.
+Next year marks 10 years since I moved to Germany. People often ask me how the hell I ended up here.
 
 It's a bit of a random story, actually. It involves a Go meetup in Jakarta, a diplomat learning to code, an open-source project, and a Slack message.
 
