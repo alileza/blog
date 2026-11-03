@@ -16,11 +16,11 @@ At that point in my life, I was obsessed with the idea of working in the music t
 
 Laurie happened to know [Julius Volz](https://juliusv.com/), who had worked at SoundCloud, and she introduced us on Facebook.
 
-I initially connected with Julius because of SoundCloud, but our conversations took a different direction. He started telling me about an open-source project he was working on called [Prometheus](https://prometheus.io/).
+Honestly, I wanted to talk to Julius because of SoundCloud. So I looked up what he was working on, an open-source project called [Prometheus](https://prometheus.io/), and used it as an excuse to chat. But our conversations took a different direction.
 
 He was kind enough to point me toward some GitHub issues and help me figure out how to contribute. Eventually, I managed to ship what felt like my first big open-source contribution.
 
-Looking back, it was probably a tiny contribution in the grand scheme of things. But to me, it was a *big deal*.
+Looking back, it was probably a small thing for him to do. But for me, it turned into a *big deal*.
 
 # PromCon 2016
 
@@ -28,7 +28,7 @@ Then came PromCon 2016, the very first Prometheus conference, held in Berlin.
 
 I was so excited about contributing to an open-source project that I decided to fly all the way from Indonesia to attend.
 
-It was my first time in Europe. I got a 15-day tourist visa and used 14 days of it. I spent 5 days in Berlin, and the rest I travelled around a bit, to Munich, Prague, Ljubljana, Venice, and Verona.
+It was my first time in Europe. I got a 15-day tourist visa and used 14 days of it. I landed in Munich, flew to Berlin the next day, and spent 5 days there. The rest I travelled around a bit, to Prague, Ljubljana, Venice, and Verona.
 
 PromCon was also the first time I met Julius in person.
 
@@ -38,7 +38,9 @@ But I was *absolutely* psyched.
 
 In fact, during the conference, Julius even mentioned that there was an attendee from Indonesia. *That was me.*
 
-[You can hear it in the PromCon 2016 recording.](https://www.youtube.com/watch?v=-JkxB0CiMjU&t=544s)
+![Julius Volz during his PromCon 2016 welcome talk, captions reading "is from japan we have an attendee from indonesia as well"](/images/promcon-2016-indonesia-mention.jpg)
+
+*You can hear it in the [PromCon 2016 recording](https://www.youtube.com/watch?v=-JkxB0CiMjU&t=544s).*
 
 Being surrounded by people who were building things like Prometheus was incredibly exciting. It made me think that maybe Berlin was somewhere I wanted to be.
 
@@ -83,3 +85,5 @@ All because I showed up at a Go meetup in Jakarta and got curious about what oth
 ---
 
 Almost 10 years later, I'm still in Berlin. Not working for a music company, but at least I'm in a band: [Two Fox Out](https://www.twofoxout.com/).
+
+![Two Fox Out playing a live show in Berlin](/images/two-fox-out-live.jpg)
