@@ -1,0 +1,112 @@
+{{ define "main" }}
+{{ $author := site.Params.author | default "Ali Reza Yahya" }}
+{{ $avatar := site.Params.avatarURL | default "https://cdn.alileza.me/public/avatar.png" }}
+
+<article class="post">
+  <header class="post-header">
+    {{ with .Params.tags }}
+    <div class="pills">
+      {{ range . }}<a class="pill" href="{{ print `tags/` (urlize .) | relURL }}">{{ . }}</a>{{ end }}
+    </div>
+    {{ end }}
+
+    <h1 class="post-title">{{ .Title }}</h1>
+
+    {{ if ne .Type "page" }}
+    <div class="byline">
+      <img class="avatar" src="{{ $avatar }}" alt="{{ $author }}" width="32" height="32" />
+      <span class="byline-name">{{ $author }}</span>
+      <span class="byline-meta">
+        {{ .ReadingTime }} min read<span class="dot">·</span>{{ .Date | time.Format "Jan 2, 2006" }}
+      </span>
+      {{ if .Draft }}<span class="badge">Draft</span>{{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  {{ if ne .Type "page" }}
+  <!-- Filled in by the script below once the page has 2+ section headings -->
+  <aside class="toc" aria-label="In this story" hidden>
+    <p class="toc-label">In this story</p>
+    <ol class="toc-list"></ol>
+  </aside>
+  {{ end }}
+
+  <div class="post-content">{{ .Content }}</div>
+
+  {{ with .Params.tags }}
+  <div class="pills post-tags">
+    {{ range . }}<a class="pill" href="{{ print `tags/` (urlize .) | relURL }}">{{ . }}</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ if ne .Type "page" }}
+  <aside class="author-card">
+    <img class="avatar" src="{{ $avatar }}" alt="{{ $author }}" width="48" height="48" />
+    <div>
+      <h2 class="author-card-name">Written by {{ $author }}</h2>
+      <p class="author-card-bio">{{ site.Params.subtitle }}</p>
+    </div>
+  </aside>
+
+  <!-- More from the same section: newer first, then older -->
+  {{ $more := slice }}
+  {{ with .NextInSection }}{{ $more = $more | append . }}{{ end }}
+  {{ with .PrevInSection }}{{ $more = $more | append . }}{{ end }}
+  {{ with $more }}
+  <section class="more">
+    <h2 class="more-title">More from {{ $author }}</h2>
+    {{ range . }}{{ partial "preview.html" . }}{{ end }}
+  </section>
+  {{ end }}
+  {{ end }}
+</article>
+
+{{ if ne .Type "page" }}
+<script>
+  // Side table of contents: one entry for the title, one per section heading.
+  // The entry for the section being read is highlighted while scrolling.
+  (() => {
+    const toc = document.querySelector('.toc');
+    const title = document.querySelector('.post-title');
+    const headings = [...document.querySelectorAll('.post-content :is(h1, h2, h3)')].filter((h) => h.id);
+    if (!toc || !title || headings.length < 2) return;
+
+    const minLevel = Math.min(...headings.map((h) => +h.tagName[1]));
+    const entries = [{ el: title, href: '#', level: minLevel }].concat(
+      headings.map((h) => ({ el: h, href: `#${h.id}`, level: +h.tagName[1] })),
+    );
+
+    const list = toc.querySelector('.toc-list');
+    const links = entries.map(({ el, href, level }) => {
+      const li = document.createElement('li');
+      li.style.setProperty('--depth', level - minLevel);
+      const a = document.createElement('a');
+      a.href = href;
+      a.textContent = el.textContent.trim();
+      li.append(a);
+      list.append(li);
+      return a;
+    });
+    toc.hidden = false;
+
+    const update = () => {
+      // A section counts as current once its heading passes 30% of the viewport
+      const line = window.innerHeight * 0.3;
+      let current = 0;
+      entries.forEach(({ el }, i) => {
+        if (el.getBoundingClientRect().top <= line) current = i;
+      });
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom) current = entries.length - 1;
+      links.forEach((a, i) => a.classList.toggle('active', i === current));
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
+{{ end }}
+
+{{ end }}

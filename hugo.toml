@@ -1,7 +1,7 @@
 baseURL = 'https://blog.alileza.me/'
 languageCode = 'en-us'
 title = 'behind the keyboard'
-theme = 'paper'
+theme = 'medium'
 [params]
     subtitle = 'failure, inefficiency, and miscommunication in software engineering'
     mainSections = ['posts']

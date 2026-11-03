@@ -1,0 +1,4 @@
+name = "Medium"
+license = "MIT"
+description = "Single-column reading layout modeled on Medium's article page"
+min_version = "0.110.0"

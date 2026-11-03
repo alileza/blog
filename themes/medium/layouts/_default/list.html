@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ $author := site.Params.author | default "Ali Reza Yahya" }}
+{{ $avatar := site.Params.avatarURL | default "https://cdn.alileza.me/public/avatar.png" }}
+
+<!-- $pages -->
+{{ $pages := union .RegularPages .Sections }}
+{{ if .IsHome }}
+{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ end }}
+
+<header class="list-header">
+  {{ if .IsHome }}
+  <div class="profile">
+    <img class="avatar" src="{{ $avatar }}" alt="{{ $author }}" width="64" height="64" />
+    <div>
+      <h1 class="list-title">{{ $author }}</h1>
+      <p class="list-subtitle">{{ site.Params.subtitle }}</p>
+    </div>
+  </div>
+  <nav class="tabs">
+    <a class="active" href="{{ `` | relURL }}">Home</a>
+    <a href="{{ `about/` | relURL }}">About</a>
+  </nav>
+  {{ else if eq .Type "tags" }}
+  <h1 class="list-title">#{{ .Title }}</h1>
+  {{ else }}
+  <h1 class="list-title">{{ .Title }}</h1>
+  {{ end }}
+</header>
+
+{{ $paginator := .Paginate $pages }}
+<div class="previews">
+  {{ range $paginator.Pages }}{{ partial "preview.html" . }}{{ end }}
+</div>
+
+<!-- Pagination -->
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pagination">
+  {{ if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}">← {{ i18n "prev_page" | default "Newer" }}</a>
+  {{ end }}
+  {{ if $paginator.HasNext }}
+  <a class="next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" | default "Older" }} →</a>
+  {{ end }}
+</nav>
+{{ end }}
+
+{{ end }}

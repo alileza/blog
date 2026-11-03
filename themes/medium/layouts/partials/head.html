@@ -1,0 +1,64 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+
+  <!-- Meta -->
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Author -->
+  {{ $site_author := or site.Params.author site.Title }}
+  {{ if eq .Kind "page" }}
+  <meta name="description" content="{{ .Summary }}" />
+  <meta name="author" content="{{ or .Params.author $site_author }}" />
+  {{ else }}
+  <meta name="description" content="{{ site.Params.description | default (print `A personal blog`) }}" />
+  <meta name="author" content="{{ $site_author }}" />
+  {{ end }}
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400;1,8..60,700&display=swap"
+  />
+  {{ $css := resources.Get "main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn.alileza.me/public/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://cdn.alileza.me/public/apple-touch-icon.png" />
+
+  <!-- Generator -->
+  {{ hugo.Generator }}
+
+  <!-- Production -->
+  {{ if or hugo.IsProduction (eq site.Params.env "production") }}
+  {{ template "_internal/google_analytics.html" . }}
+  {{ template "_internal/schema.html" . }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}" />
+  {{ end }}
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ end }}
+
+  <meta property="og:title" content="Behind The Keyboard">
+  <meta property="og:site_name" content="blog.alileza.me">
+  <meta property="og:url" content="https://blog.alileza.me">
+  <meta property="og:description" content="Failure, Inefficiency, and Miscommunication in Software Engineering">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://cdn.alileza.me/public/avatar.png">
+
+  <meta name="twitter:title" content="Behind The Keyboard">
+  <meta name="twitter:description" content="Failure, Inefficiency, and Miscommunication in Software Engineering">
+  <meta name="twitter:image" content="https://cdn.alileza.me/public/avatar.png">
+  <meta name="twitter:card" content="summary_large_image">
+</head>

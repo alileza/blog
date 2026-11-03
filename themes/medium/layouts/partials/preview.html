@@ -1,0 +1,17 @@
+<article class="preview">
+  <a class="preview-link" href="{{ .RelPermalink }}">
+    <div class="preview-text">
+      <h2 class="preview-title">
+        {{ .Title }}{{ if .Draft }} <span class="badge">Draft</span>{{ end }}
+      </h2>
+      <p class="preview-summary">{{ .Summary | plainify | htmlUnescape | truncate 160 }}</p>
+      <div class="preview-meta">
+        {{ .Date | time.Format "Jan 2, 2006" }}<span class="dot">·</span>{{ .ReadingTime }} min read
+      </div>
+    </div>
+    <!-- Thumbnail: first image in the post -->
+    {{ with findRESubmatch `<img[^>]*src="([^"]+)"` .Content 1 }}
+    <img class="preview-thumb" src="{{ index (index . 0) 1 | safeURL }}" alt="" loading="lazy" />
+    {{ end }}
+  </a>
+</article>
